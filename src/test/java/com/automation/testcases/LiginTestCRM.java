@@ -1,20 +1,13 @@
-package com.learnautomation.testcases;
+package com.automation.testcases;
 
-import com.learnautomation.pages.Baseclass;
-import com.learnautomation.pages.LoginPage;
-import com.learnautomation.utility.BrowserFactory;
-import com.learnautomation.utility.ExcelDataProvider;
-import com.learnautomation.utility.Helper;
-import org.openqa.selenium.WebDriver;
+import com.automation.pages.Baseclass;
+import com.automation.pages.LoginPage;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class LiginTestCRM extends Baseclass  {
 
-//    @Test      
+//    @Test
 //    public void loginApp()
 //    {
 //        logger = report.createTest("Login to CRM");

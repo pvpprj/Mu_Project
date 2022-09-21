@@ -1,10 +1,8 @@
-package com.learnautomation.pages;
+package com.automation.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-import static org.openqa.selenium.By.linkText;
 
 public class LoginPage {
 

@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/Rahul_Gupta1/IdeaProjects/FramWork_Mukesh/src/test/java/com/learnautomation/testcases/LiginTestCRM.java">
         <classes>
-            <class name="com.learnautomation.testcases.LiginTestCRM"/>
+            <class name="com.automation.testcases.LiginTestCRM"/>
         </classes>
     </test>
 </suite>

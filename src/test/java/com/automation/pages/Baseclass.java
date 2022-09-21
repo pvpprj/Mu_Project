@@ -1,14 +1,12 @@
-package com.learnautomation.pages;
+package com.automation.pages;
 
 import com.aventstack.extentreports.*;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.learnautomation.utility.BrowserFactory;
-import com.learnautomation.utility.ConfigeDataProvider;
-import com.learnautomation.utility.ExcelDataProvider;
-import com.learnautomation.utility.Helper;
+import com.automation.utility.BrowserFactory;
+import com.automation.utility.ConfigeDataProvider;
+import com.automation.utility.ExcelDataProvider;
+import com.automation.utility.Helper;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.*;
