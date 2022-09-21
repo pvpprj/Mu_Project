@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Rahul_Gupta1/IdeaProjects/FramWork_Mukesh/src/test/java/com/learnautomation/testcases/LiginTestCRM.java">
+        <classes>
+            <class name="com.learnautomation.testcases.LiginTestCRM"/>
+        </classes>
+    </test>
+</suite>
