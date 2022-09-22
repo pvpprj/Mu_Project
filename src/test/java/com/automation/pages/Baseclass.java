@@ -44,11 +44,11 @@ public class Baseclass {
         Reporter.log("Browser and Application is up and running ",true);
     }
 
-    @AfterClass
-    public void tearDown()
-    {
-        BrowserFactory.quitBroser(driver);
-    }
+//    @AfterClass
+//    public void tearDown()
+//    {
+//        BrowserFactory.quitBroser(driver);
+//    }
 
     @AfterMethod
     public void tearDownMethod(ITestResult result) throws IOException {
@@ -56,7 +56,7 @@ public class Baseclass {
 
         if (result.getStatus()==ITestResult.FAILURE)
         {
-            Helper.captureScreenshot(driver);
+            Reporter.log("Test Failed",true);
             logger.fail("Test Failed", MediaEntityBuilder.createScreenCaptureFromPath(Helper.captureScreenshot(driver)).build());
         }
           else if (result.getStatus()==ITestResult.SUCCESS)

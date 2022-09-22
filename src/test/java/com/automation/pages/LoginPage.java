@@ -1,10 +1,14 @@
 package com.automation.pages;
 
+import com.automation.utility.Helper;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class LoginPage {
+public class LoginPage extends Helper {
 
     WebDriver driver;
 
@@ -25,6 +29,8 @@ public class LoginPage {
         loginButton.click();
     }
 
+
+
     // ------------------------------------------------------------------
     // Facebook
     @FindBy(xpath ="//a[@class='_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy']") WebElement createNewAccount;
@@ -38,15 +44,24 @@ public class LoginPage {
 
     public void loginFaceBook(String username ,String lastnamee,String reg_emaile,String password )
     {
-        createNewAccount.click();
-        firstName.sendKeys(username);
-        lastname.sendKeys(lastnamee);
-        reg_email.sendKeys(reg_emaile);
-        reg_passwd.sendKeys(password);
-        signButton.click();
+//        createNewAccount.click();
+//        firstName.sendKeys(username);
+//        lastname.sendKeys(lastnamee);
+//        reg_email.sendKeys(reg_emaile);
+//        reg_passwd.sendKeys(password);
+//        signButton.click();
+
+        clickButton(createNewAccount);
+
+        sendText(firstName,username);
+        sendText(lastname,lastnamee);
+        sendText(reg_email,reg_emaile);
+        sendText(reg_passwd,password);
+        clickButton(signButton);
+        // sendText();
     }
 
-
+    // clickButton(createNewAccount);
 
 
 
