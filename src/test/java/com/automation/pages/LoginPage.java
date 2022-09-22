@@ -21,13 +21,13 @@ public class LoginPage extends Helper {
     @FindBy(xpath = "//input[@placeholder='Password']") WebElement password;
     @FindBy(xpath ="//div[@class='ui fluid large blue submit button']") WebElement loginButton;
 
-    public void clickLogin(String usernameApplication ,String passwordApplication )
-    {
-        login.click();
-        username.sendKeys(usernameApplication);
-        password.sendKeys(passwordApplication);
-        loginButton.click();
-    }
+//    public void clickLogin(String usernameApplication ,String passwordApplication )
+//    {
+//        login.click();
+//        username.sendKeys(usernameApplication);
+//        password.sendKeys(passwordApplication);
+//        loginButton.click();
+//    }
 
 
 
