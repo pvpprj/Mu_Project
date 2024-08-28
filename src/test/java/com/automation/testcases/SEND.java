@@ -1,9 +1,13 @@
 package com.automation.testcases;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.*;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
+
+import java.util.concurrent.TimeUnit;
 
 public class SEND {
 
@@ -34,13 +38,13 @@ public class SEND {
     @Test
     public void Test1()
     {
-//        System.setProperty("webdriver.chrome.driver","./Drivers/chromedriver.exe");  //     "C:\\Users\\Rahul_Gupta1\\Desktop\\driver\\chromedriver.exe"
-//       WebDriver driver=new ChromeDriver();
-//        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-//        driver.manage().window().maximize();
-//       driver.get("https://www.flipkart.com/");
-//
-//
+        System.setProperty("webdriver.chrome.driver","./Drivers/chromedriver.exe");  //     "C:\\Users\\Rahul_Gupta1\\Desktop\\driver\\chromedriver.exe"
+       WebDriver driver=new ChromeDriver();
+        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
+       driver.get("https://www.flipkart.com/");
+
+
 //
 //        WebElement search = driver.findElement(By.xpath("//input[@class='_3704LK']"));
 //        search.sendKeys("IPHONE 10");
