@@ -9,7 +9,8 @@ public class SortString {
         String s[] = s1.split(" ");
         int j, i;
 
-        //  Arrays.sort(s);
+          Arrays.sort(s);
+        System.out.println("Sort String = "+s);
         int max = 0;
 
         for (i = 0; i < s.length; i++) {

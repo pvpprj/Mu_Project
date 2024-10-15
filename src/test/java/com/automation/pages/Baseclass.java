@@ -68,6 +68,4 @@ public class Baseclass {
         Reporter.log("Test Completed >>> Report Generated  ",true);
     }
 
-
-
 }

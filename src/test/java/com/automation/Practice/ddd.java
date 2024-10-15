@@ -1,9 +1,6 @@
 package com.automation.Practice;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class ddd {
     public static void main(String[] args) {
@@ -26,6 +23,11 @@ public class ddd {
         }
         else
             m.put(c1,1); }
+        m.forEach((k,v)-> System.out.print(k+"="+v+","));
+        System.out.println();
+
+        Collections.max(m.values());
+        m.remove('A');
         m.forEach((k,v)-> System.out.print(k+"="+v+","));
 
     }

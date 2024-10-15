@@ -6,24 +6,17 @@ import java.util.*;
 
 public class pp {
     public static void main(String[] args) {
-       // String input = new String("aabbccddeeff");
-        String input = "aabbccddeeffggggghhhhhiiiiijjjjkkkkllllllmmmmmmmnnnnnnooooopppppqqqqrrrssss";
-int sb[]={1,2,3,4,5,6,8}; int n=sb.length+1; int sum=0;int i,j,k;
-        String ree="";
-       String s="Download from artifact repository"; String re=""; System.out.println(s);
+        int a[] = {2, 4,4,2,1,2,3,4,5,6,7,8,9,8,7,6,5,4, 1, 5, 3, 6};
+        int i,j; int secMax=0; int count=0;  int thirdMax=0;
 
-       for(i=0;i<s.length();i++){
-           re=s.charAt(i)+re;
-       }     System.out.println(re);
+        Set s=new TreeSet();
+    for (i=0;i<a.length;i++) {
+        s.add(a[i]);
+    }
 
-        for(i=s.length()-1;i>=0;i--){
-            ree=ree+s.charAt(i);
-        }   System.out.println(ree);
+    ArrayList aa= new ArrayList(s);
 
-String str[]=re.split(" ");
+        System.out.println("Set = "+s);    System.out.println("Arr = "+aa);
 
-        for(i=str.length-1;i>=0;i--){
-            System.out.print(str[i]+" ");
-        }
-
+        System.out.println("thirdMax = "+aa.get(aa.size()-3));
     }    }

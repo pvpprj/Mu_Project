@@ -22,7 +22,6 @@ public class Remove_second_highest_Values_from_HashMap {
 
         for (Map.Entry<String,Integer> entry : map.entrySet()) {
             if(entry.getValue()==secM){
-                sss=entry.getKey();
                 str.add(entry.getKey());
             }    }
 
